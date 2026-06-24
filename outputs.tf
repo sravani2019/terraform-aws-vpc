@@ -3,7 +3,7 @@
 # }
 
 output "vpc_id" {
-    value = aws_vpc.amin.id
+    value = aws_vpc.main.id
 }
 
 output "public_subnet_id" {
@@ -15,5 +15,5 @@ output "private_subnet_id" {
 }
 
 output "database_subnet_id" {
-    value = aws_database.private[*].id
+    value = aws_database.database[*].id
 }
